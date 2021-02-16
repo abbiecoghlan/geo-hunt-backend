@@ -15,20 +15,17 @@ ActiveRecord::Schema.define(version: 2021_02_16_010447) do
   create_table "attempts", force: :cascade do |t|
     t.string "status"
     t.float "time_taken"
-    t.integer "puzzle_id", null: false
-    t.integer "user_id", null: false
+    t.integer "puzzle_id"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["puzzle_id"], name: "index_attempts_on_puzzle_id"
-    t.index ["user_id"], name: "index_attempts_on_user_id"
   end
 
   create_table "clues", force: :cascade do |t|
     t.text "hint"
-    t.integer "puzzle_id", null: false
+    t.integer "puzzle_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["puzzle_id"], name: "index_clues_on_puzzle_id"
   end
 
   create_table "puzzles", force: :cascade do |t|
@@ -49,7 +46,4 @@ ActiveRecord::Schema.define(version: 2021_02_16_010447) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "attempts", "puzzles"
-  add_foreign_key "attempts", "users"
-  add_foreign_key "clues", "puzzles"
 end
