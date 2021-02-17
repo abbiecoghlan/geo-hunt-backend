@@ -12,8 +12,12 @@ class AttemptsController < ApplicationController
     end
 
     def create
-        byebug
-        attempt = Attempt.new(puzzle_id: params["puzzleId"].to_i)
+        attempt = Attempt.new(puzzle_id: params["puzzleId"].to_i, user_id: params["userId"].to_i)
+        attempt.status = 'failed'
+
+        attempt.save
+        # add validations
+        render json: attempt
     end
 
     
