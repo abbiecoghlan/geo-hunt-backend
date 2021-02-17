@@ -20,6 +20,16 @@ class AttemptsController < ApplicationController
         render json: attempt
     end
 
+    def update
+        attempt = Attempt.find_by(id: params['id'])
+        attempt.status = params['status']
+        attempt.time_taken = params['timeTaken']
+
+        attempt.update
+
+        render json:attempt
+    end
+
     
 
 end
