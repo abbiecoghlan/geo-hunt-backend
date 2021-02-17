@@ -21,11 +21,12 @@ class AttemptsController < ApplicationController
     end
 
     def update
+        # byebug
         attempt = Attempt.find_by(id: params['id'])
         attempt.status = params['status']
         attempt.time_taken = params['timeTaken']
 
-        attempt.update
+        attempt.save
 
         render json:attempt
     end
