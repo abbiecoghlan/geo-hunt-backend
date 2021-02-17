@@ -21,6 +21,8 @@ gem 'puma', '~> 5.0'
 
 gem 'active_model_serializers'
 
+gem 'bcrypt'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
