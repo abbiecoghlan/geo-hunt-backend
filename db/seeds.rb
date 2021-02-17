@@ -11,16 +11,18 @@ Puzzle.destroy_all
 Attempt.destroy_all
 Clue.destroy_all
 
-User.create(name: "Abbie", username: "thatsabbie")
-User.create(name: "Marc", username: "helloMarc")
-User.create(name: "Danielle", username: "hiDanielle")
-User.create(name: "Lisa", username: "LisaForTheWin")
+User.create(name: "Abbie", username: "thatsabbie", password: "123", password_confirmation: "123")
+User.create(name: "Marc", username: "helloMarc", password: "123", password_confirmation: "123")
+User.create(name: "Danielle", username: "hiDanielle", password: "123", password_confirmation: "123")
+User.create(name: "Lisa", username: "LisaForTheWin", password: "123", password_confirmation: "123")
 
 
 Puzzle.create(title: "Midwest is best I", location_name: "The Gateway Arch", latitude: 38.6247, longitude: -90.1848, difficulty: "easy")
 Puzzle.create(title: "Midwest is best II", location_name: "Cloudgate - The Bean", latitude: 41.8827, longitude: -87.6233, difficulty: "easy")
 Puzzle.create(title: "Japan I", location_name: "Shibuya Crossing", latitude: 35.659485, longitude: 139.700546, difficulty: "hard")
 Puzzle.create(title: "Japan II", location_name: "Mount Fuji", latitude: 35.360554, longitude: 138.727783, difficulty: "hard")
+
+
 # MAKE ID's DYNAMIC
 Attempt.create(status: "completed", time_taken: 43, puzzle_id: 1, user_id: 1)
 Attempt.create(status: "completed", time_taken: 120, puzzle_id: 2, user_id: 1)
@@ -36,11 +38,10 @@ Clue.create(puzzle_id: 2, hint: "After you get your deep dish, you're going to w
 Clue.create(puzzle_id: 2, hint: "A cool landmark built this MILLENIUM")
 Clue.create(puzzle_id: 2, hint: "This location will STEEL your heart")
 
-Clue.create(puzzle_id: 3, hint: "Often called the world’s busiest pedestrian scramble")
+
+Clue.create(puzzle_id: 3, hint: "Often called the world's busiest pedestrian scramble")
 Clue.create(puzzle_id: 3, hint: "The Times Square of a country in Asia")
 Clue.create(puzzle_id: 3, hint: "It has appeared in the Sofia Coppolas 2003 film 'Lost in Translation'")
-
 Clue.create(puzzle_id: 4, hint: "The highest mountain in Japan")
 Clue.create(puzzle_id: 4, hint: "This location is featured in many woodblock prints")
 Clue.create(puzzle_id: 4, hint: "This mountain is actually a volcano!")
-
