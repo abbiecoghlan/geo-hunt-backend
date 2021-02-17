@@ -13,7 +13,7 @@ class AttemptsController < ApplicationController
 
     def create
         attempt = Attempt.new(puzzle_id: params["puzzleId"].to_i, user_id: params["userId"].to_i)
-        attempt.status = 'failed'
+        attempt.status = 'pending'
 
         attempt.save
         # add validations
