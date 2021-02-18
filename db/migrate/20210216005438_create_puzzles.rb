@@ -6,6 +6,7 @@ class CreatePuzzles < ActiveRecord::Migration[6.1]
       t.float :latitude
       t.float :longitude
       t.string :difficulty
+      t.float :radius_limit
 
       t.timestamps
     end
