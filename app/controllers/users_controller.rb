@@ -17,6 +17,7 @@ class UsersController < ApplicationController
         if user.try(:authenticate, params[:password])
             render json: user
         end
+        render json: user
     end
 
 
