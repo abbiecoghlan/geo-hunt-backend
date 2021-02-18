@@ -43,6 +43,8 @@ puzzle16 = Puzzle.create(title: "European Escapade III", location_name: "Leaning
 
 puzzle_array = [puzzle1, puzzle2, puzzle3, puzzle4, puzzle5, puzzle6, puzzle7, puzzle8, puzzle9, puzzle10, puzzle11, puzzle12, puzzle13, puzzle14, puzzle15, puzzle16]
 
+puts puzzle_array
+
 # MAKE ID's DYNAMIC
 
 user_array.each do |user|
@@ -128,3 +130,10 @@ Clue.create(puzzle_id: puzzle_array[15].id, hint: "Seeing this monument is a PIS
 Clue.create(puzzle_id: puzzle_array[15].id, hint: "Don't LEAN on it.")
 Clue.create(puzzle_id: puzzle_array[15].id, hint: "It's off by about four degrees.")
 
+Clue.create(puzzle_id: puzzle_array[2].id, hint: "Often called the world's busiest pedestrian scramble")
+Clue.create(puzzle_id: puzzle_array[2].id, hint: "The Times Square of a country in Asia")
+Clue.create(puzzle_id: puzzle_array[2].id, hint: "It has appeared in the Sofia Coppolas 2003 film 'Lost in Translation'")
+
+Clue.create(puzzle_id: puzzle_array[3].id, hint: "The highest mountain in Japan")
+Clue.create(puzzle_id: puzzle_array[3].id, hint: "This location is featured in many woodblock prints")
+Clue.create(puzzle_id: puzzle_array[3].id, hint: "This mountain is actually a volcano!")
