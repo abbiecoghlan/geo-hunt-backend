@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_02_16_010447) do
 
   create_table "attempts", force: :cascade do |t|
-    t.string "status", default: "pending"
+    t.string "status", default: "Failed"
     t.float "time_taken"
     t.integer "puzzle_id"
     t.integer "user_id"

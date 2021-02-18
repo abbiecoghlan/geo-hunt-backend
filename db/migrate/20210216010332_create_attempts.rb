@@ -1,7 +1,7 @@
 class CreateAttempts < ActiveRecord::Migration[6.1]
   def change
     create_table :attempts do |t|
-      t.string :status, default: "pending"
+      t.string :status, default: "Failed"
       t.float :time_taken
       t.integer :puzzle_id
       t.integer :user_id
