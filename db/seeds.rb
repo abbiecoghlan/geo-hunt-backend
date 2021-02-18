@@ -26,6 +26,8 @@ puzzle4 = Puzzle.create(title: "Japan II", location_name: "Mount Fuji", latitude
 
 puzzle_array = [puzzle1, puzzle2, puzzle3, puzzle4]
 
+puts puzzle_array
+
 # MAKE ID's DYNAMIC
 
 user_array.each do |user|
@@ -56,9 +58,10 @@ Clue.create(puzzle_id: puzzle_array[1].id, hint: "A cool landmark built this MIL
 Clue.create(puzzle_id: puzzle_array[1].id, hint: "This location will STEEL your heart")
 
 
-Clue.create(puzzle_id: puzzle_array[2], hint: "Often called the world's busiest pedestrian scramble")
-Clue.create(puzzle_id: puzzle_array[2], hint: "The Times Square of a country in Asia")
-Clue.create(puzzle_id: puzzle_array[2], hint: "It has appeared in the Sofia Coppolas 2003 film 'Lost in Translation'")
-Clue.create(puzzle_id: puzzle_array[3], hint: "The highest mountain in Japan")
-Clue.create(puzzle_id: puzzle_array[3], hint: "This location is featured in many woodblock prints")
-Clue.create(puzzle_id: puzzle_array[3], hint: "This mountain is actually a volcano!")
+Clue.create(puzzle_id: puzzle_array[2].id, hint: "Often called the world's busiest pedestrian scramble")
+Clue.create(puzzle_id: puzzle_array[2].id, hint: "The Times Square of a country in Asia")
+Clue.create(puzzle_id: puzzle_array[2].id, hint: "It has appeared in the Sofia Coppolas 2003 film 'Lost in Translation'")
+
+Clue.create(puzzle_id: puzzle_array[3].id, hint: "The highest mountain in Japan")
+Clue.create(puzzle_id: puzzle_array[3].id, hint: "This location is featured in many woodblock prints")
+Clue.create(puzzle_id: puzzle_array[3].id, hint: "This mountain is actually a volcano!")
