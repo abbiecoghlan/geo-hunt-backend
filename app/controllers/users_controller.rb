@@ -12,12 +12,13 @@ class UsersController < ApplicationController
     end
 
     def login
-        user = User.find_by(username: params[:username])
+        # byebug
+        user = User.find_by(username: params['username'])
 
-        if user.try(:authenticate, params[:password])
+        if user.try(:authenticate, params['password'])
             render json: user
         end
-        render json: user
+        # render json: user
     end
 
 
