@@ -8,4 +8,9 @@ class User < ApplicationRecord
 
     has_secure_password
 
+    def uniqPuzzles
+        self.puzzles.uniq
+    end
+
+
 end

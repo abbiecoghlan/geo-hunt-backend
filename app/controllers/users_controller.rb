@@ -21,5 +21,14 @@ class UsersController < ApplicationController
         # render json: user
     end
 
+    def profile
+
+        user = User.find_by(id: params['id'])
+
+        puzzles = user.uniqPuzzles
+        # byebug
+        render json: {user: user, puzzles: puzzles}
+
+    end
 
 end
