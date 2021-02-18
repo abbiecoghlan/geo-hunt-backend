@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2021_02_16_010447) do
     t.float "latitude"
     t.float "longitude"
     t.string "difficulty"
+    t.float "radius_limit"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

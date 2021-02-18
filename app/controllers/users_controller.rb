@@ -26,8 +26,9 @@ class UsersController < ApplicationController
         user = User.find_by(id: params['id'])
 
         puzzles = user.uniqPuzzles
+        attempts = user.attempts
         # byebug
-        render json: {user: user, puzzles: puzzles}
+        render json: {user: user, puzzles: puzzles, attempts: attempts}
 
     end
 

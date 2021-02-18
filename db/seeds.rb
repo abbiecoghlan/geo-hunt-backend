@@ -25,6 +25,8 @@ Puzzle.create(title: "Japan II", location_name: "Mount Fuji", latitude: 35.36055
 
 # MAKE ID's DYNAMIC
 Attempt.create(status: "completed", time_taken: 43, puzzle_id: 1, user_id: 1)
+Attempt.create(status: "completed", time_taken: 34, puzzle_id: 1, user_id: 1)
+Attempt.create(status: "completed", time_taken: 25, puzzle_id: 1, user_id: 1)
 Attempt.create(status: "completed", time_taken: 120, puzzle_id: 2, user_id: 1)
 Attempt.create(status: "completed", time_taken: 140, puzzle_id: 1, user_id: 2)
 Attempt.create(status: "completed", time_taken: 125, puzzle_id: 2, user_id:2)
