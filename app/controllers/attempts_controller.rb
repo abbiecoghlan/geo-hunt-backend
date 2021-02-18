@@ -19,16 +19,35 @@ class AttemptsController < ApplicationController
     end
 
     def update
-        # byebug
+
         attempt = Attempt.find_by(id: params['id'])
         attempt.status = params['status']
-        attempt.time_taken = params['timeTaken']
+        attempt.time_taken = parse_time(params['timeTaken'])
 
         attempt.save
 
         render json:attempt
     end
 
-    
+    def parse_time(time_string)
+        count = 0
+        seconds = 0
+        array = time_string.split(':')
+        while count < time_string.length do
+            if count == 0
+                seconds += array[count].to_i * 3600
+            end
+
+            if count == 1
+                seconds += array[count].to_i * 60
+            end
+            
+            if count == 2
+                seconds += array[count].to_i
+            end
+            count += 1
+        end
+        seconds
+    end
 
 end
