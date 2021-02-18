@@ -88,13 +88,13 @@ Clue.create(puzzle_id: puzzle_array[4].id, hint: "This statude is in the style o
 
 Clue.create(puzzle_id: puzzle_array[5].id, hint: "The Lost City of the _____.")
 Clue.create(puzzle_id: puzzle_array[5].id, hint: "Not even a knife can fit between its stones.")
-Clue.create(puzzle_id: puzzle_array[5].id, hint: "Andes stairs will get ya!")
+Clue.create(puzzle_id: puzzle_array[5].id, hint: "ANDES stairs will get ya!")
 
-Clue.create(puzzle_id: puzzle_array[6].id, hint: "This location is right at your fingertips.")
+Clue.create(puzzle_id: puzzle_array[6].id, hint: "This location is right at your FINGERTIPS.")
 Clue.create(puzzle_id: puzzle_array[6].id, hint: "It’s meant to represent the relationship between man and nature.")
-Clue.create(puzzle_id: puzzle_array[6].id, hint: "This hint should hand it to you.")
+Clue.create(puzzle_id: puzzle_array[6].id, hint: "This hint should HAND it to you.")
 
-Clue.create(puzzle_id: puzzle_array[7].id hint: "The hike will kill you.")
+Clue.create(puzzle_id: puzzle_array[7].id, hint: "The hike will KILL you.")
 Clue.create(puzzle_id: puzzle_array[7].id, hint: "Africa's tabletop.")
 Clue.create(puzzle_id: puzzle_array[7].id, hint: "The tallest mountain on this continent.")
 
@@ -104,7 +104,7 @@ Clue.create(puzzle_id: puzzle_array[8].id, hint: "Make sure not to FALL.")
 
 Clue.create(puzzle_id: puzzle_array[9].id, hint: "A must-see for cat people.")
 Clue.create(puzzle_id: puzzle_array[9].id, hint: "This location is a CAT-ch.")
-Clue.create(puzzle_id: puzzle_array[9].id, hint: "Its statue neighbors are acute.")
+Clue.create(puzzle_id: puzzle_array[9].id, hint: "Its statue neighbors are ACUTE.")
 
 Clue.create(puzzle_id: puzzle_array[10].id, hint: "It's not really gold.")
 Clue.create(puzzle_id: puzzle_array[10].id, hint: "It'SAN FRAN-tastic place to visit!")
@@ -120,7 +120,7 @@ Clue.create(puzzle_id: puzzle_array[12].id, hint: "After walking around this pla
 
 Clue.create(puzzle_id: puzzle_array[13].id, hint: "Prehistoric Rock-Circle.")
 Clue.create(puzzle_id: puzzle_array[13].id, hint: "ARCH you glad we gave you this hint?")
-Clue.create(puzzle_id: puzzle_array[13].id, hint: "Druid you come over here?")
+Clue.create(puzzle_id: puzzle_array[13].id, hint: "DRUID you come over here?")
 
 Clue.create(puzzle_id: puzzle_array[14].id, hint: "I FELL for France when I came here.")
 Clue.create(puzzle_id: puzzle_array[14].id, hint: "The cousin of Lady Liberty")
@@ -130,10 +130,4 @@ Clue.create(puzzle_id: puzzle_array[15].id, hint: "Seeing this monument is a PIS
 Clue.create(puzzle_id: puzzle_array[15].id, hint: "Don't LEAN on it.")
 Clue.create(puzzle_id: puzzle_array[15].id, hint: "It's off by about four degrees.")
 
-Clue.create(puzzle_id: puzzle_array[2].id, hint: "Often called the world's busiest pedestrian scramble")
-Clue.create(puzzle_id: puzzle_array[2].id, hint: "The Times Square of a country in Asia")
-Clue.create(puzzle_id: puzzle_array[2].id, hint: "It has appeared in the Sofia Coppolas 2003 film 'Lost in Translation'")
 
-Clue.create(puzzle_id: puzzle_array[3].id, hint: "The highest mountain in Japan")
-Clue.create(puzzle_id: puzzle_array[3].id, hint: "This location is featured in many woodblock prints")
-Clue.create(puzzle_id: puzzle_array[3].id, hint: "This mountain is actually a volcano!")
