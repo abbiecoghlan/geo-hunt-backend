@@ -40,4 +40,11 @@ class UsersController < ApplicationController
 
     end
 
+    def reset
+        user = User.find_by(id: params['id'])
+        user.attempts.destroy_all
+        
+        render json: {message: "Data reset."}
+    end
+
 end
