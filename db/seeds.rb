@@ -19,7 +19,7 @@ user4 = User.create(name: "Lisa", username: "LisaForTheWin", password: "123", pa
 user_array = [user1, user2, user3, user4]
 
 
-puzzle1 = Puzzle.create(title: "Midwest is Best I", location_name: "The Gateway Arch", latitude: 38.6247, longitude: -90.1848, difficulty: "easy")
+puzzle1 = Puzzle.create(title: "Midwest is Best I", location_name: "The Gateway Arch", latitude: 38.6247, longitude: -90.1848, difficulty: "easy", solution_image: "https://s27363.pcdn.co/wp-content/uploads/2019/02/Gateway-Arch-in-February.jpg.optimal.jpg", preview_image: "https://i.imgur.com/M0B300t.png")
 puzzle2 = Puzzle.create(title: "Midwest is Best II", location_name: "Cloudgate - The Bean", latitude: 41.8827, longitude: -87.6233, difficulty: "easy")
 
 puzzle3 = Puzzle.create(title: "Japan I", location_name: "Shibuya Crossing", latitude: 35.659485, longitude: 139.700546, difficulty: "hard")
