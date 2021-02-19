@@ -21,6 +21,14 @@ class UsersController < ApplicationController
         # render json: user
     end
 
+    def create
+        user = User.new(name: params['name'], username: params['username'], password: params['password'])
+
+        if user.save
+            render json: user
+        end
+    end
+
     def profile
 
         user = User.find_by(id: params['id'])
