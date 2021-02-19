@@ -1,24 +1,54 @@
-# README
+GEO HUNT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to GEO HUNT!
 
-Things you may want to cover:
+This project was created by three students attending Flatiron School's software engineering immersive as their module three project. 
 
-* Ruby version
+****
 
-* System dependencies
+GEO HUNT is an interactive geography game. Users are given hints to guess a location. The user uses the interactive map, provided by a Google Maps API, to guess the location. Meanwhile the app keeps track of the users game stats through an dynamic leaderboard. 
 
-* Configuration
+****
 
-* Database creation
+MODEL
+The user in our application is the game player. 
 
-* Database initialization
+USERS
+Our application utilizes the following models:
+Fugitive: a fugitive has many crimes and has many cities through crimes
+User: A user has many ateempts and has many puzzles through attempts.
+Attempt: An attempt belongs to a user and to a puzzle.
+Puzzle: A puzzle has many attempts and has many clues.
+Clue: A clue belongs to a puzzle.
 
-* How to run the test suite
+****
 
-* Services (job queues, cache servers, search engines, etc.)
+INSTRUCTIONS FOR LAUNCHING THE APP
+This app is working with Ruby 2.6.1, Rails 6.1.2, and Sqlite3 1.4.
+Fork and clone this repository into your local environment.
+Open a terminal and cd into the backend folder.
+Run bundle install in your terminal.
+Run rake db:migrate to migrate the database.
+Run rake db:seed to seed the database.
+Run rails s to run the backend of the program.
+Open a second terminal and cd into the frontend folder.
+Run open index.html to open the website.
 
-* Deployment instructions
+*****
 
-* ...
+INSTRUCTIONS FOR NAVIGATING GEO HUNT
+The user will be directed to a home page. There, the user is free to be directed to the Login, Leaderboard, and Puzzle pages via the navigation bar.
+Login: Here the user can login or sign up to play the game. Once logged in, another option for profile will pop up in the navigation bar and the user will be able to click on the puzzle page.
+Puzzles: This page displays all of the puzzles available to users. The user can click on a puzzle and be redirected to the puzzle page. If the user clicks on a puzzle before being logged in, they will be redirected to the login page.
+Leaderboard: A page that displays the leaderboard for all the users of the game. The user can click on a user in the leaderboard and see their profile. 
+Profile: Here the user is able to see their personal stats and information.
+Puzzle: The puzzle page is where the game happens. 
+
+
+Resources
+https://maps.googleapis.com/maps/api/js?key=AIzaSyDH8K0f85l8Yn7MKODUpSiBIR1wl90x28E&callback=initMap&libraries=places&v=weekly
+
+Contributors
+Abbie Coghlan, Marc Ferraro, and Danielle Leppert-Simenauer
+
+
