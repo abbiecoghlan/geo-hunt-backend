@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 2021_02_16_010447) do
     t.float "longitude"
     t.string "difficulty"
     t.float "radius_limit", default: 0.04
+    t.string "preview_image"
+    t.string "solution_image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
